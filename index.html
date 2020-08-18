@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        div.page {
+            background-color: lightblue;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: 1fr 15fr 1fr;
+            grid-template-areas: 'header header'
+                'main main'
+                'footer footer';
+        }
+
+        header.header {
+            background-color: lightseagreen;
+            grid-area: header;
+        }
+
+        nav.nav {
+            background-color: lightseagreen;
+            grid-area: nav;
+        }
+
+        main.main {
+            background-color: lightgray;
+            grid-area: main;
+        }
+
+        footer.footer {
+            background-color: blanchedalmond;
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="page">
+        <header class="header">Header</header>
+        <!-- <nav class="nav">nav</nav> -->
+        <main class="main">Innhold</main>
+        <footer class="footer">Footer</footer>
+    </div>
+
+</body>
+
+</html>
